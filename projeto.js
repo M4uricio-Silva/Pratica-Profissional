@@ -18,5 +18,5 @@ function criptografar(texto, N) {
     return resultado;  // aqui retorna o texto após a primeira iteração
 }                              
 
-// aqui embaixo é o exemplo que vamos ficar usando, podem mudar ser quiser
+// aqui embaixo é o exemplo que vamos ficar usando, podem mudar se quiser
 console.log(criptografar("abc", 1));  // bcd
