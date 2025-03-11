@@ -18,5 +18,11 @@ function criptografar(texto, N) {
     return resultado;  // aqui retorna o texto após a primeira iteração
 }                              
 
+function criptografarDuasVezes(texto, N) {
+    let primeiraIteracao = criptografar(texto, N); // Aplica a primeira criptografia
+    let segundaIteracao = criptografar(primeiraIteracao, N); // Aplica a segunda criptografia
+    return segundaIteracao;
+}
+
 // aqui embaixo é o exemplo que vamos ficar usando, podem mudar se quiser
 console.log(criptografar("abc", 1));  // bcd
