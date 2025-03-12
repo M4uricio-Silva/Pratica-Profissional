@@ -24,5 +24,11 @@ function criptografarDuasVezes(texto, N) {
     return segundaIteracao;
 }
 
+function criptografarTresVezes(texto, N) {
+    let segundaIteracao = criptografarDuasVezes(texto, N); 
+    let terceiraIteracao = criptografar(segundaIteracao, N); 
+    return terceiraIteracao;
+}
+
 // aqui embaixo é o exemplo que vamos ficar usando, podem mudar se quiser
-console.log(criptografar("abc", 1));  // bcd
+console.log(criptografar("abc-123", 1));  // bcd
