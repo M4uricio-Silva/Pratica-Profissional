@@ -19,8 +19,8 @@ function criptografar(texto, N) {
 }                              
 
 function criptografarDuasVezes(texto, N) {
-    let primeiraIteracao = criptografar(texto, N); // Aplica a primeira criptografia
-    let segundaIteracao = criptografar(primeiraIteracao, N); // Aplica a segunda criptografia
+    let primeiraIteracao = criptografar(texto, N);
+    let segundaIteracao = criptografar(primeiraIteracao, N);
     return segundaIteracao;
 }
 
@@ -31,6 +31,13 @@ function criptografarTresVezes(texto, N) {
 }
 
 // aqui embaixo é o exemplo que vamos ficar usando, podem mudar se quiser
-console.log(criptografar("abc-123", 1));  // bcd
-console.log(criptografar("abc-123", 1));  // cde
-console.log(criptografar("abc-123", 1));  // def
+let textoOriginal = "abc-123";
+let N = 1;
+
+let primeiraSaida = criptografar(textoOriginal, N);
+let segundaSaida = criptografarDuasVezes(textoOriginal, N);
+let terceiraSaida = criptografarTresVezes(textoOriginal, N);
+
+console.log("Primeira iteração: " + primeiraSaida);
+console.log("Segunda iteração: " + segundaSaida);
+console.log("Terceira iteração: " + terceiraSaida);
