@@ -32,3 +32,5 @@ function criptografarTresVezes(texto, N) {
 
 // aqui embaixo é o exemplo que vamos ficar usando, podem mudar se quiser
 console.log(criptografar("abc-123", 1));  // bcd
+console.log(criptografar("abc-123", 1));  // cde
+console.log(criptografar("abc-123", 1));  // def
